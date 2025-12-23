@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="light" lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>못지나가요 모찌나가요</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Noto+Sans+KR:wght@300;400;500;700&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#8B6F47",
+                        "background-light": "#FAF8F3",
+                        "background-dark": "#2C2416",
+                    },
+                    fontFamily: {
+                        "display": ["Noto Sans KR", "Manrope", "sans-serif"],
+                        "sans": ["Noto Sans KR", "Manrope", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body
+    class="font-display bg-background-light dark:bg-background-dark text-[#111318] dark:text-white min-h-screen flex flex-col">
+    <header class="w-full bg-white dark:bg-[#1A2230] border-b border-[#f0f2f4] dark:border-[#2A3441]">
+        <div class="max-w-[1280px] mx-auto px-4 sm:px-10 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-4 text-[#111318] dark:text-white">
+                <div class="size-8">
+                    <img src="Tangerine_Mochi.jpg" alt="Tangerine Mochi"
+                        class="w-full h-full object-cover rounded-full">
+                </div>
+                <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">못지나가요 모찌나가요</h2>
+            </div>
+        </div>
+    </header>
+    <main class="flex-grow flex items-center justify-center p-6">
+        <div class="layout-content-container flex flex-col max-w-[560px] w-full">
+            <div
+                class="bg-white dark:bg-[#1A2230] rounded-xl shadow-[0_4px_24px_rgba(0,0,0,0.06)] dark:shadow-[0_4px_24px_rgba(0,0,0,0.2)] overflow-hidden border border-[#f0f2f4] dark:border-[#2A3441]">
+                <div class="relative h-48 bg-cover bg-center flex flex-col items-start justify-end p-6"
+                    data-alt="Abstract blue digital pattern background"
+                    style='background-image: linear-gradient(180deg, rgba(19, 91, 236, 0) 0%, rgba(19, 91, 236, 0.4) 100%), url("name.png");'>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="relative z-10 w-full flex justify-between items-end">
+                        <div class="flex flex-col gap-1">
+                            <div class="flex items-center gap-3">
+                                <p class="text-white text-3xl font-bold leading-tight">계좌번호 확인</p>
+                                <img src="Shine_Muscat_Mochi.png" alt="Shine Muscat Mochi"
+                                    class="w-12 h-12 object-contain rounded-lg" style="mix-blend-mode: multiply;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-8 flex flex-col items-center gap-8">
+                    <div class="text-center space-y-2">
+                        <h3 class="text-lg font-bold text-[#111318] dark:text-white">사동고 2-10</h3>
+                        <p class="text-[#616f89] dark:text-slate-400 text-sm">못지나가요 모찌나가요</p>
+                    </div>
+                    <div
+                        class="w-full bg-background-light dark:bg-black/20 rounded-xl py-10 px-4 border border-dashed border-primary/30 dark:border-primary/40 relative group transition-all hover:border-primary">
+                        <p
+                            class="absolute top-3 left-1/2 -translate-x-1/2 text-xs font-semibold text-primary/70 uppercase tracking-widest">
+                            Bank Account</p>
+                        <h1
+                            class="text-primary dark:text-blue-400 tracking-wider text-[32px] sm:text-[30px] font-black leading-tight text-center tabular-nums select-all">
+                            국민은행 8062-9073-2284-58
+                        </h1>
+                    </div>
+                    <div class="w-full">
+                        <button id="copyButton"
+                            class="w-full cursor-pointer flex items-center justify-center rounded-xl h-16 px-5 bg-primary hover:bg-primary/90 hover:scale-[1.01] active:scale-[0.98] transition-all text-white gap-3 text-lg font-bold shadow-lg shadow-primary/30 group">
+                            <span class="material-symbols-outlined group-hover:rotate-12 transition-transform"
+                                style="font-size: 24px;">content_copy</span>
+                            <span>계좌번호 복사하기</span>
+                        </button>
+                    </div>
+                    <div
+                        class="flex items-center justify-center gap-2 text-[#616f89] dark:text-slate-500 text-xs font-medium bg-[#f9fafb] dark:bg-[#151b26] px-4 py-2 rounded-full w-fit">
+                        <span class="material-symbols-outlined text-sm">verified_user</span>
+                        <p>안전하게 암호화된 QR 링크입니다</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Toast Notification -->
+    <div id="toast"
+        class="fixed top-6 left-1/2 -translate-x-1/2 bg-white dark:bg-[#1A2230] text-[#111318] dark:text-white px-6 py-4 rounded-xl shadow-2xl border border-[#f0f2f4] dark:border-[#2A3441] flex items-center gap-3 transform -translate-y-32 opacity-0 transition-all duration-300 ease-out z-50">
+        <div class="bg-green-500 rounded-full p-1">
+            <span class="material-symbols-outlined text-white text-xl"
+                style="font-variation-settings: 'FILL' 1;">check_circle</span>
+        </div>
+        <div>
+            <p class="font-bold text-sm">복사 완료!</p>
+            <p class="text-xs text-[#616f89] dark:text-slate-400">계좌번호가 클립보드에 복사되었습니다</p>
+        </div>
+    </div>
+
+    <script>
+        const copyButton = document.getElementById('copyButton');
+        const toast = document.getElementById('toast');
+        const accountNumber = '국민은행 8062-9073-2284-58';
+
+        copyButton.addEventListener('click', async () => {
+            try {
+                // Copy account number to clipboard
+                await navigator.clipboard.writeText(accountNumber);
+
+                // Show toast notification
+                toast.classList.remove('-translate-y-32', 'opacity-0');
+                toast.classList.add('translate-y-0', 'opacity-100');
+
+                // Hide toast after 3 seconds
+                setTimeout(() => {
+                    toast.classList.remove('translate-y-0', 'opacity-100');
+                    toast.classList.add('-translate-y-32', 'opacity-0');
+                }, 3000);
+            } catch (err) {
+                console.error('Failed to copy:', err);
+                // Fallback for older browsers and some mobile devices
+                const textArea = document.createElement('textarea');
+                textArea.value = accountNumber;
+
+                // Ensure the textarea is not visible but part of the DOM
+                textArea.style.position = 'fixed';
+                textArea.style.left = '-9999px';
+                textArea.style.top = '0';
+                textArea.setAttribute('readonly', '');
+
+                document.body.appendChild(textArea);
+
+                // Select text
+                textArea.select();
+                textArea.setSelectionRange(0, 99999); // For mobile devices
+
+                try {
+                    document.execCommand('copy');
+
+                    // Show toast on success
+                    toast.classList.remove('-translate-y-32', 'opacity-0');
+                    toast.classList.add('translate-y-0', 'opacity-100');
+
+                    setTimeout(() => {
+                        toast.classList.remove('translate-y-0', 'opacity-100');
+                        toast.classList.add('-translate-y-32', 'opacity-0');
+                    }, 3000);
+                } catch (e) {
+                    console.error('Fallback copy failed', e);
+                    alert('계좌번호 복사에 실패했습니다. 직접 복사해주세요: ' + accountNumber);
+                }
+
+                document.body.removeChild(textArea);
+            }
+        });
+    </script>
+
+</body>
+
+</html>
